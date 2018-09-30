@@ -2,7 +2,7 @@
   <div class="container">
 		<% @posts.each do |post| %>
     <div class="posts-index-item"> 
-      <%= post.content %><br>
+      <%= link_to(post.content, "/posts/#{post.id}") %><br>
       作成日<%= post.created_at %>
     </div>
     <% end %>

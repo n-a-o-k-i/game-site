@@ -1,0 +1,10 @@
+<div class="main posts-index">
+  <div class="container">
+		<% @posts.each do |post| %>
+    <div class="posts-index-item"> 
+      <%= post.content %><br>
+      作成日<%= post.created_at %>
+    </div>
+    <% end %>
+  </div>
+</div>

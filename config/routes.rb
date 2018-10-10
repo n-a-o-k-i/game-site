@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
 	get "login" => "users#login_form"
 	post "login" => "users#login"
 	post "logout" => "users#logout"
@@ -19,4 +20,5 @@ Rails.application.routes.draw do
   post "posts/:id/destroy" => "posts#destroy"
 	get "/" => "home#top"
 	get "/about" => "home#about"
+
 end

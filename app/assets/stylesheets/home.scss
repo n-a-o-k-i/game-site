@@ -126,8 +126,8 @@ header {
   height: auto;
   min-height: 100%;
   color: white;
-  background-image: url("black_gb.jpg");
-  background-color: #3ecdc6;
+  background-image: url("code.jpg");
+  background-color: #00afed;
   background-repeat: no-repeat;
   background-position: center 50%;
   background-size: cover;
@@ -211,7 +211,7 @@ header {
 }
 
 .form input[type="submit"] {
-  background-color: #3ecdc6;
+  background-color: #00afed;
   color: white;
   cursor: pointer;
   font-weight: 300;
@@ -240,4 +240,16 @@ header {
   width: 100%;
   border-radius: 0 0 2px 2px;
   font-size: 14px;
+}
+
+.download-link {
+  padding: 10px 30px; 
+  border-radius: 50px;
+  color: #fff;
+  background-color: #00afed;
+  border: 1px solid #fff;
+}
+
+.intro-txt {
+  margin-bottom: 30px;
 }

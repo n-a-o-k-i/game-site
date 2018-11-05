@@ -9,7 +9,8 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'devise'
-
+gem 'file_validators'
+gem 'bcrypt'
 # 開発環境(ローカル)ではSQLite3を使用
 gem 'sqlite3', group: :development
 

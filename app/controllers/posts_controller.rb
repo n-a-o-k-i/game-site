@@ -18,8 +18,18 @@ class PostsController < ApplicationController
 	def create
 		@post = Post.new(
 			content: params[:content],
-			user_id: @current_user.id
+			user_id: @current_user.id,
+			image_name: params[:image]
 			)
+
+		if params[:image]
+			@post.image_name = "#{rand(1..1000)}.jpg"
+			image = params[:image]
+			File.binwrite("public/post_images/#{@post.image_name}", image.read)
+		else
+			@post.image_name = "default_post.jpg"
+		end
+
 		if @post.save
 			flash[:notice] = "投稿を作成しました"
 			redirect_to("/posts/index")
@@ -35,6 +45,13 @@ class PostsController < ApplicationController
 	def update
 		@post = Post.find_by(id: params[:id])
 		@post.content = params[:content]
+
+		if params[:image]
+			@post.image_name = "#{@post.id}.jpg"
+			image = params[:image]
+			File.binwrite("public/post_images/#{@post.image_name}", image.read)
+		end
+
 		if @post.save
 			flash[:notice] = "投稿を編集しました"
 			redirect_to("/posts/index")

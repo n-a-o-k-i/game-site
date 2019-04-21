@@ -2,4 +2,4 @@
 
 Railsで作成。
 https://smokersgame.herokuapp.com/posts/index
-上記リンクでお試しいただけます。
+でお試しいただけます。

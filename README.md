@@ -1,4 +1,4 @@
-# README
+## 学校の授業で作ったゲームを配布し、ユーザーがコミュニケーションを取れるように制作したサイトです
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
